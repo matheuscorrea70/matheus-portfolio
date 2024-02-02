@@ -6,7 +6,7 @@ import ProjectsSection from './components/projectsSection'
 
 const Home = () => {
   return (
-    <main className="flex flex-col px-6 items-center w-full ">
+    <main className="flex flex-col px-4 lg:px-6 items-center w-full ">
       <div className="lg:max-w-4xl">
         <HomeSection />
         <AboutSection />

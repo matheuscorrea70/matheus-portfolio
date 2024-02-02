@@ -9,8 +9,8 @@ const ExperienceSection = () => {
       <SectionHeader title="My journey so far" subTitle="Experience" />
       <ul className="mt-8">
         {EXPERIENCE_LIST.map(item => (
-          <li className="flex items-start gap-4 mt-8">
-            <img src={item.picture} className="w-16" />
+          <li className="flex items-start gap-2 lg:gap-4 mt-8">
+            <img src={item.picture} className="w-10 lg:w-16 pt-1" />
             <div>
               <header>
                 <h2 className="font-bold text-lg">{item.title}</h2>

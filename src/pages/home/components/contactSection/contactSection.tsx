@@ -6,7 +6,7 @@ import MailIcon from 'common/assets/images/mail.png'
 const ContactSection = () => {
   return (
     <section id={`section-${HomeSectionId.Contact}`} className="pt-32">
-      <SectionHeader title="Don't be shy! Hit me up!" subTitle="Contact" />
+      <SectionHeader title="Reach out and let's start a conversation about your next project or collaboration." subTitle="Contact" />
       <div className="mt-8">
         <div className="flex gap-2">
           <img src={LocationIcon} alt="Location icon" className="w-6 h-6" />

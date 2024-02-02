@@ -10,10 +10,10 @@ const ProjectsSection = () => {
       <SectionHeader title="Each project is a unique piece of development" subTitle="Portfolio" />
       <ul className="mt-8">
         {PROJECT_LIST.map((item, index) => (
-          <div
-            className={`flex gap-12 mt-4 justify-between shado ${index % 2 === 0 && 'flex-row-reverse'}`}>
+          <li
+            className={`flex flex-col gap-12 mt-4 justify-between shado ${index % 2 === 0 && 'flex-row-reverse'} lg:flex-row`}>
             <div>
-              <img src={item.picture} className="max-w-md rounded-lg" />
+              <img src={item.picture} className="w-full lg:max-w-md rounded-lg" />
             </div>
             <div>
               <h2 className="font-bold">{item.title}</h2>
@@ -33,7 +33,7 @@ const ProjectsSection = () => {
                 )}
               </footer>
             </div>
-          </div>
+          </li>
         ))}
       </ul>
     </section>

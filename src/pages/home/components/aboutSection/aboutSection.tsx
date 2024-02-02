@@ -7,21 +7,26 @@ const AboutSection = () => {
     <section
       id={`section-${HomeSectionId.About}`}
       className="flex flex-col gap-12 pt-32 lg:flex-row">
-      <img src={LaptopImage} alt="Laptop Image" className="w-full max-w-96 inline-block rounded-md self-center" />
+      <img
+        src={LaptopImage}
+        alt="Laptop Image"
+        className="w-full max-w-96 inline-block rounded-md self-center"
+      />
 
       <div>
-        <SectionHeader title="Senior Software Engineer" subTitle="About me" />
+        <SectionHeader
+          title="A seasoned Senior Software Engineer based in Brazil"
+          subTitle="About me"
+        />
         <p className="mt-8">
-          In the quiet corner of a bustling city, where the hum of traffic and the hurried footsteps
-          of pedestrians create a rhythmic symphony, there stands an old bookstore with a faded sign
-          that bears the weight of countless stories. The scent of aged paper and worn leather
-          envelopes anyone who dares to venture inside, as shelves upon shelves stretch toward the
-          ceiling, each holding a treasure trove of literary worlds waiting to be explored. Dust
-          particles dance in the soft glow of antique lamps, casting a nostalgic ambiance that seems
-          to transcend time. Amidst the hushed whispers of forgotten tales and the occasional
-          creaking of well-trodden wooden floorboards, the bookstore becomes a sanctuary for those
-          seeking refuge from the chaos outside, inviting them to lose themselves in the magic of
-          words and imagination.
+          As a Senior Software Engineer, I have been working since 2015 in different companies and
+          on various projects. I possess impressive skills in the frontend tech stack, including
+          TypeScript, JavaScript, React, HTML, CSS, Tailwind, Next.js, Node, and others. I excel in
+          designing and maintaining responsive web applications, ensuring a smooth user experience.
+          My expertise lies in crafting dynamic, engaging interfaces through writing clean and
+          optimized code and utilizing cutting-edge development tools and techniques. I am also a
+          team player who thrives on collaborating with cross-functional teams to produce
+          outstanding web applications.
         </p>
       </div>
     </section>
