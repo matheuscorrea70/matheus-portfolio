@@ -4,13 +4,13 @@ import SectionHeader from 'common/components/sectionHeader'
 
 const AboutSection = () => {
   return (
-    <section id={`section-${HomeSectionId.About}`} className="flex flex-col gap-12 pt-32">
-      <img src={LaptopImage} alt="Laptop Image" className="h-full w-auto inline-block rounded-md" />
+    <section
+      id={`section-${HomeSectionId.About}`}
+      className="flex flex-col gap-12 pt-32 lg:flex-row">
+      <img src={LaptopImage} alt="Laptop Image" className="w-full max-w-96 inline-block rounded-md self-center" />
+
       <div>
-        <SectionHeader
-          title="Senior Software Engineer"
-          subTitle="About me"
-        />
+        <SectionHeader title="Senior Software Engineer" subTitle="About me" />
         <p className="mt-8">
           In the quiet corner of a bustling city, where the hum of traffic and the hurried footsteps
           of pedestrians create a rhythmic symphony, there stands an old bookstore with a faded sign
