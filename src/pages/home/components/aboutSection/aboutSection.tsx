@@ -1,16 +1,18 @@
 import { HomeSectionId } from 'common/types/homeSectionId'
 import LaptopImage from './assets/images/laptop.png'
+import SectionHeader from 'common/components/sectionHeader'
 
 const AboutSection = () => {
   return (
-    <section className='flex'>
-      <img src={LaptopImage} alt="Laptop Image" />
+    <section className="flex flex-col gap-12">
+      <img src={LaptopImage} alt="Laptop Image" className="h-full w-auto inline-block rounded-md" />
       <div>
-        <header>
-          <h2>About me</h2>
-          <h1 id={HomeSectionId.About}>Senior Software Engineer</h1>
-        </header>
-        <p>
+        <SectionHeader
+          title="Senior Software Engineer"
+          subTitle="About me"
+          id={HomeSectionId.About}
+        />
+        <p className="mt-8">
           In the quiet corner of a bustling city, where the hum of traffic and the hurried footsteps
           of pedestrians create a rhythmic symphony, there stands an old bookstore with a faded sign
           that bears the weight of countless stories. The scent of aged paper and worn leather

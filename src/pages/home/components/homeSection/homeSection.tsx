@@ -9,9 +9,10 @@ import MatheusAvatar from './assets/images/matheusAvatar.jpeg'
 const HomeSection = () => {
   return (
     <section>
-      <main className="flex flex-col gap-12">
+      <main className="flex flex-col gap-12 items-center">
+        <img className="rounded-full h-72 w-72" alt="Matheus avatar" src={MatheusAvatar} />
         <div>
-          <h1 id={HomeSectionId.Home}>Senior Software Engineer</h1>
+          <h1 id={HomeSectionId.Home} className='font-bold'>Senior Software Engineer</h1>
           <p className="pt-6">
             In the quiet corner of a bustling city, where the hum of traffic and the hurried
             footsteps of pedestrians create a rhythmic symphony, there stands an old bookstore with
@@ -25,15 +26,17 @@ const HomeSection = () => {
             themselves in the magic of words and imagination.
           </p>
         </div>
-        <img className="rounded-full h-72 w-72" alt="Matheus avatar" src={MatheusAvatar} />
       </main>
-      <footer className='flex gap-8'>
-        <span className='font-bold'>Tech Stack</span>
-        <span className='font-bold'>|</span>
-        <img src={ReactIcon} />
-        <img src={TSIcon} />
-        <img src={JSIcon} />
-        <img src={NodeJSIcon} />
+      <footer className="flex flex-col items-center mt-8">
+        <div className="font-bold">Tech Stack</div>
+        {/* <span className="font-bold">|</span> */}
+        <div className='flex gap-4 mt-4'>
+          <img className="h-8 w-8" src={ReactIcon} alt='React' />
+          <img className="h-8 w-8" src={TSIcon} alt="TypeScript" />
+          <img className="h-8 w-8" src={JSIcon} alt="JavaScript" />
+          <img className="h-8 w-8" src={NodeJSIcon} alt="Node" />
+        </div>
+        <div className='text-xs mt-2 text-gray-500'>(React, TypeScript, JavaScript, Node)</div>
       </footer>
     </section>
   )
