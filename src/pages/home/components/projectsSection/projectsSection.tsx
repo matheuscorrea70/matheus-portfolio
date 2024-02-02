@@ -7,7 +7,7 @@ import { PROJECT_LIST } from './constants'
 const ProjectsSection = () => {
   return (
     <section id={`section-${HomeSectionId.Projects}`} className="pt-32">
-      <SectionHeader title="Each project is a unique piece of development" subTitle="Portfolio" />
+      <SectionHeader title="Explore a curated collection of my projects, each telling a unique story of creativity and expertise." subTitle="Portfolio" />
       <ul className="mt-8">
         {PROJECT_LIST.map((item, index) => (
           <li
