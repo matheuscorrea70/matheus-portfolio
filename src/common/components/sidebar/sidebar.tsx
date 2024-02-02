@@ -9,7 +9,7 @@ type SidebarProps = {
 const Sidebar = forwardRef(({ isOpen, onClick }: SidebarProps, ref: Ref<HTMLDivElement>) => {
   return (
     <div
-      className={`top-0 right-0 w-[60vw] sm:w-[30vw] bg-white p-10 fixed h-full z-40 ease-in-out duration-300 shadow-lg ${
+      className={`top-0 right-0 w-[60dvw] sm:w-[30dvw] bg-white p-10 fixed h-full z-40 ease-in-out duration-300 shadow-lg ${
         isOpen ? 'translate-x-0 ' : 'translate-x-full'
       }`}
       ref={ref}>

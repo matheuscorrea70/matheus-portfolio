@@ -5,14 +5,14 @@ import ProjectsSection from './components/projectsSection'
 
 const Home = () => {
   return (
-    <div className="flex flex-col px-6 items-center w-full ">
+    <main className="flex flex-col px-6 items-center w-full ">
       <div className="lg:max-w-4xl">
         <HomeSection />
         <AboutSection />
         <ProjectsSection />
         <ContactSection />
       </div>
-    </div>
+    </main>
   )
 }
 
