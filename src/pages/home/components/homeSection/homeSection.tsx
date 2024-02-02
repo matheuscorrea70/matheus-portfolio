@@ -11,7 +11,7 @@ import { GITHUB_URL, LINKEDIN_URL } from 'common/constants/urls'
 
 const HomeSection = () => {
   return (
-    <section className="pt-32" id={`section-${HomeSectionId.Home}`}>
+    <section className="pt-16 lg:pt-24" id={`section-${HomeSectionId.Home}`}>
       <div className="flex flex-col gap-12 items-center lg:flex-row-reverse">
         <img className="rounded-full h-72 w-72" alt="Matheus avatar" src={MatheusAvatar} />
         <div>
