@@ -21,7 +21,7 @@ const ProjectsSection = () => {
               <div className="font-bold mt-4">Stack: {item.stack}</div>
               <footer className="flex gap-12 mt-4">
                 {item.github && (
-                  <a className="flex gap-2" href={item.github} target="_blank">
+                  <a className="flex gap-2 hover:bg-sky-50 py-2 rounded-md" href={item.github} target="_blank">
                     <span>Code</span> <GitHubIcon width={22} />
                   </a>
                 )}

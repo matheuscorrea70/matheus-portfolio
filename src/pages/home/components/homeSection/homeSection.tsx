@@ -17,13 +17,22 @@ const HomeSection = () => {
         <div>
           <h1 className="font-bold text-xl">Senior Software Engineer</h1>
           <p className="pt-6">
-            Hi, I'm Matheus Correa. A seasoned Senior Software Engineer based in Minas Gerais, Brazil with over 9 years of experience as a front-end developer.
+            Hi, I'm Matheus Correa. A seasoned Senior Software Engineer based in Minas Gerais,
+            Brazil with over 9 years of experience as a front-end developer.
           </p>
-          <div className="mt-4 flex gap-4">
-            <a href={LINKEDIN_URL} target='_blank' aria-label='Matheus LinkedIn URL'>
+          <div className="mt-2 flex gap-3 items-center">
+            <a
+              href={LINKEDIN_URL}
+              target="_blank"
+              aria-label="Matheus LinkedIn URL"
+              className="hover:bg-sky-50 p-1 rounded-md">
               <LinkedInIcon width={24} />
             </a>
-            <a href={GITHUB_URL} target='_blank' aria-label='Matheus GitHub URL'>
+            <a
+              href={GITHUB_URL}
+              target="_blank"
+              aria-label="Matheus GitHub URL"
+              className="hover:bg-sky-50 p-1 rounded-md">
               <GitHubIcon width={24} />
             </a>
           </div>
