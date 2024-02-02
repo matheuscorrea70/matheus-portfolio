@@ -1,24 +1,27 @@
 import { HomeSectionId } from 'common/types/homeSectionId'
 
+const scrollIntoView = (sectionId: HomeSectionId) => {
+  document.getElementById(`section-${sectionId}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+}
 export const NAV_SECTIONS = [
   {
     id: HomeSectionId.Home,
-    url: `#${HomeSectionId.Home}`,
-    label: 'Home'
+    label: 'Home',
+    onClick: () => scrollIntoView(HomeSectionId.Home)
   },
   {
     id: HomeSectionId.About,
-    url: `#${HomeSectionId.About}`,
-    label: 'About'
+    label: 'About',
+    onClick: () => scrollIntoView(HomeSectionId.About)
   },
   {
     id: HomeSectionId.Projects,
-    url: `#${HomeSectionId.Projects}`,
-    label: 'Projects'
+    label: 'Projects',
+    onClick: () => scrollIntoView(HomeSectionId.Projects)
   },
   {
     id: HomeSectionId.Contact,
-    url: `#${HomeSectionId.Contact}`,
-    label: 'Contact'
+    label: 'Contact',
+    onClick: () => scrollIntoView(HomeSectionId.Contact)
   }
 ]

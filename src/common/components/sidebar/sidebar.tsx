@@ -3,9 +3,10 @@ import { forwardRef, Ref } from 'react'
 
 type SidebarProps = {
   isOpen: boolean
+  onClick?: () => void
 }
 
-const Sidebar = forwardRef(({ isOpen }: SidebarProps, ref: Ref<HTMLDivElement>) => {
+const Sidebar = forwardRef(({ isOpen, onClick }: SidebarProps, ref: Ref<HTMLDivElement>) => {
   return (
     <div
       className={`top-0 right-0 w-[60vw] bg-white p-10 fixed h-full z-40 ease-in-out duration-300 shadow-lg ${
@@ -14,8 +15,14 @@ const Sidebar = forwardRef(({ isOpen }: SidebarProps, ref: Ref<HTMLDivElement>) 
       ref={ref}>
       <ul>
         {NAV_SECTIONS.map(item => (
-          <li>
-            <a href={item.url}>{item.label}</a>
+          <li className="py-2">
+            <button
+              onClick={() => {
+                onClick?.()
+                item.onClick()
+              }}>
+              {item.label}
+            </button>
           </li>
         ))}
       </ul>

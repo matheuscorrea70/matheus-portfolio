@@ -8,11 +8,11 @@ import MatheusAvatar from './assets/images/matheusAvatar.jpeg'
 
 const HomeSection = () => {
   return (
-    <section>
+    <section className='pt-32' id={`section-${HomeSectionId.Home}`}>
       <main className="flex flex-col gap-12 items-center">
         <img className="rounded-full h-72 w-72" alt="Matheus avatar" src={MatheusAvatar} />
         <div>
-          <h1 id={HomeSectionId.Home} className='font-bold'>Senior Software Engineer</h1>
+          <h1 className='font-bold'>Senior Software Engineer</h1>
           <p className="pt-6">
             In the quiet corner of a bustling city, where the hum of traffic and the hurried
             footsteps of pedestrians create a rhythmic symphony, there stands an old bookstore with

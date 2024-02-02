@@ -34,7 +34,7 @@ const Header = () => {
           <a className='text-zinc-50' href={section.url}>{section.label}</a>
         ))} */}
       {/* </nav> */}
-      <Sidebar isOpen={isSidebarOpen} ref={sidebarRef} />
+      <Sidebar isOpen={isSidebarOpen} ref={sidebarRef} onClick={() => setIsSidebarOpen(false)} />
     </header>
   )
 }

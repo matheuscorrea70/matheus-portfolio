@@ -3,12 +3,8 @@ import { HomeSectionId } from 'common/types/homeSectionId'
 
 const ProjectsSection = () => {
   return (
-    <section>
-      <SectionHeader
-        title="Each project is a unique piece of development"
-        subTitle="Portfolio"
-        id={HomeSectionId.Projects}
-      />
+    <section id={`section-${HomeSectionId.Projects}`} className="pt-32">
+      <SectionHeader title="Each project is a unique piece of development" subTitle="Portfolio" />
     </section>
   )
 }

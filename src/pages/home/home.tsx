@@ -5,7 +5,7 @@ import ProjectsSection from './components/projectsSection'
 
 const Home = () => {
   return (
-    <div className='flex flex-col gap-32 py-24 px-6'>
+    <div className='flex flex-col px-6'>
       <HomeSection />
       <AboutSection />
       <ProjectsSection />

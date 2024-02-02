@@ -4,13 +4,12 @@ import SectionHeader from 'common/components/sectionHeader'
 
 const AboutSection = () => {
   return (
-    <section className="flex flex-col gap-12">
+    <section id={`section-${HomeSectionId.About}`} className="flex flex-col gap-12 pt-32">
       <img src={LaptopImage} alt="Laptop Image" className="h-full w-auto inline-block rounded-md" />
       <div>
         <SectionHeader
           title="Senior Software Engineer"
           subTitle="About me"
-          id={HomeSectionId.About}
         />
         <p className="mt-8">
           In the quiet corner of a bustling city, where the hum of traffic and the hurried footsteps
