@@ -1,6 +1,6 @@
 import { HomeSectionId } from 'common/types/homeSectionId'
 import JSIcon from 'common/assets/images/js.png'
-import NodeJSIcon from 'common/assets/images/node-js.png'
+import NodeJSIcon from 'common/assets/images/nodejs.png'
 import ReactIcon from 'common/assets/images/react.png'
 import TSIcon from 'common/assets/images/ts.png'
 import LinkedInIcon from 'common/assets/icons/linkedin.svg?react'

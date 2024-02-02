@@ -1,0 +1,33 @@
+import SectionHeader from 'common/components/sectionHeader'
+import { HomeSectionId } from 'common/types/homeSectionId'
+import { EXPERIENCE_LIST } from './constants'
+import Html from 'common/components/html'
+
+const ExperienceSection = () => {
+  return (
+    <section id={`section-${HomeSectionId.Experience}`} className="pt-32">
+      <SectionHeader title="My journey so far" subTitle="Experience" />
+      <ul className="mt-8">
+        {EXPERIENCE_LIST.map(item => (
+          <li className="flex items-start gap-4 mt-8">
+            <img src={item.picture} className="w-16" />
+            <div>
+              <header>
+                <h2 className="font-bold text-lg">{item.title}</h2>
+              </header>
+              <div className='text-sm'>{item.company}</div>
+              <div className='text-gray-500 text-sm'>{item.date}</div>
+              <div className='text-gray-500 text-sm'>{item.location}</div>
+              <Html as="p" className='mt-4'>{item.description}</Html>
+              <div className='mt-4 '>
+                <strong>Tech stack: {item.techStack}</strong>
+              </div>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )
+}
+
+export default ExperienceSection

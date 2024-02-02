@@ -15,6 +15,11 @@ export const NAV_SECTIONS = [
     onClick: () => scrollIntoView(HomeSectionId.About)
   },
   {
+    id: HomeSectionId.Experience,
+    label: 'Experience',
+    onClick: () => scrollIntoView(HomeSectionId.Experience)
+  },
+  {
     id: HomeSectionId.Projects,
     label: 'Projects',
     onClick: () => scrollIntoView(HomeSectionId.Projects)

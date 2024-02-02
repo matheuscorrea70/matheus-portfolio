@@ -1,6 +1,7 @@
 export enum HomeSectionId {
-  Home = 'HOME',
-  About = 'ABOUT',
-  Projects = 'PROJECTS',
-  Contact = 'CONTACT'
+  Home = 'home',
+  About = 'about',
+  Experience = 'experience',
+  Projects = 'projects',
+  Contact = 'contact'
 }

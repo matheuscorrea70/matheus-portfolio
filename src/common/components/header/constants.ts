@@ -12,6 +12,11 @@ export const HEADER_SECTIONS = [
     label: 'About'
   },
   {
+    id: HomeSectionId.Experience,
+    url: `#${HomeSectionId.Experience}`,
+    label: 'Experience'
+  },
+  {
     id: HomeSectionId.Projects,
     url: `#${HomeSectionId.Projects}`,
     label: 'Projects'
