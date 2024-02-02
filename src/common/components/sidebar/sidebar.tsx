@@ -1,5 +1,5 @@
-import { NAV_SECTIONS } from 'common/constants/navSections'
 import { forwardRef, Ref } from 'react'
+import { NAV_SECTIONS } from './constants'
 
 type SidebarProps = {
   isOpen: boolean
