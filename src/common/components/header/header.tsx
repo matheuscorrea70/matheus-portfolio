@@ -1,5 +1,3 @@
-/// <reference types="vite-plugin-svgr/client" />
-
 import { useEffect, useRef, useState } from 'react'
 import { useLayout } from 'common/hooks/useLayout'
 import Sidebar from '../sidebar'

@@ -11,13 +11,12 @@ const ProjectsSection = () => {
         title="Explore a curated collection of my projects, each telling a unique story of creativity and expertise."
         subTitle="Portfolio"
       />
-      <ul className="mt-8">
+      <ul>
         {PROJECT_LIST.map((item, index) => (
           <li
-            className={`flex flex-col gap-12 mt-4 justify-between shado ${index % 2 === 0 && 'flex-row-reverse'} lg:flex-row`}>
-            <div>
-              <img src={item.picture} className="w-full lg:max-w-md rounded-lg" />
-            </div>
+            className={`flex flex-col items-start gap-12 mt-8 pb-8 justify-between ${index % 2 === 0 && 'lg:flex-row-reverse'} lg:flex-row`}>
+            <img src={item.picture} className="w-[30rem] h-auto rounded-lg" />
+
             <div>
               <h2 className="font-bold">{item.title}</h2>
               <p className="mt-4">{item.description}</p>
