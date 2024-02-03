@@ -7,7 +7,10 @@ import { PROJECT_LIST } from './constants'
 const ProjectsSection = () => {
   return (
     <section id={`section-${HomeSectionId.Projects}`} className="pt-32">
-      <SectionHeader title="Explore a curated collection of my projects, each telling a unique story of creativity and expertise." subTitle="Portfolio" />
+      <SectionHeader
+        title="Explore a curated collection of my projects, each telling a unique story of creativity and expertise."
+        subTitle="Portfolio"
+      />
       <ul className="mt-8">
         {PROJECT_LIST.map((item, index) => (
           <li
@@ -21,14 +24,17 @@ const ProjectsSection = () => {
               <div className="font-bold mt-4">Stack: {item.stack}</div>
               <footer className="flex gap-12 mt-4">
                 {item.github && (
-                  <a className="flex gap-2 hover:bg-sky-50 py-2 rounded-md" href={item.github} target="_blank">
-                    <span>Code</span> <GitHubIcon width={22} />
+                  <a
+                    className="flex gap-2 hover:bg-sky-50 dark:hover:bg-sky-900 py-2 rounded-md"
+                    href={item.github}
+                    target="_blank">
+                    <span>Code</span> <GitHubIcon width={22} className="dark:fill-gray-100" />
                   </a>
                 )}
                 {item.liveDemo && (
                   <a className="flex gap-2" href={item.liveDemo} target="_blank">
                     <span>Live Demo</span>
-                    <ExternalIcon width={20} />
+                    <ExternalIcon width={20} className="dark:fill-gray-100" />
                   </a>
                 )}
               </footer>

@@ -25,15 +25,15 @@ const HomeSection = () => {
               href={LINKEDIN_URL}
               target="_blank"
               aria-label="Matheus LinkedIn URL"
-              className="hover:bg-sky-50 p-1 rounded-md">
-              <LinkedInIcon width={24} />
+              className="hover:bg-sky-50 dark:hover:bg-sky-900 p-1 rounded-md">
+              <LinkedInIcon width={24} className="dark:fill-gray-100" />
             </a>
             <a
               href={GITHUB_URL}
               target="_blank"
               aria-label="Matheus GitHub URL"
-              className="hover:bg-sky-50 p-1 rounded-md">
-              <GitHubIcon width={24} />
+              className="hover:bg-sky-50 dark:hover:bg-sky-900 p-1 rounded-md">
+              <GitHubIcon width={24} className="dark:fill-gray-100" />
             </a>
           </div>
         </div>
@@ -46,7 +46,7 @@ const HomeSection = () => {
           <img className="h-8 w-8" src={JSIcon} alt="JavaScript" />
           <img className="h-8 w-8" src={NodeJSIcon} alt="Node" />
         </div>
-        <div className="text-xs mt-2 text-gray-500">(React, TypeScript, JavaScript, Node)</div>
+        <div className="text-xs mt-2 text-gray-500 dark:text-gray-400">(React, TypeScript, JavaScript, Node)</div>
       </footer>
     </section>
   )

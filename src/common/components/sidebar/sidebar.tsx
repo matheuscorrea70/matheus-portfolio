@@ -9,7 +9,7 @@ type SidebarProps = {
 const Sidebar = forwardRef(({ isOpen, onClick }: SidebarProps, ref: Ref<HTMLDivElement>) => {
   return (
     <div
-      className={`top-0 right-0 w-[60dvw] max-w-72 sm:w-[30dvw] bg-white p-10 fixed h-full z-40 ease-in-out duration-300 shadow-lg ${
+      className={`top-0 right-0 w-[60dvw] max-w-72 sm:w-[30dvw] bg-white p-10 fixed h-full z-40 ease-in-out duration-300 shadow-lg dark:bg-zinc-800 ${
         isOpen ? 'translate-x-0 ' : 'translate-x-full'
       }`}
       ref={ref}>
@@ -18,7 +18,7 @@ const Sidebar = forwardRef(({ isOpen, onClick }: SidebarProps, ref: Ref<HTMLDivE
           <li className="py-2">
             <button
               aria-label={item.label}
-              className='flex gap-4 hover:bg-sky-50 p-4 w-full rounded-md'
+              className="flex gap-4 hover:bg-sky-50 dark:hover:bg-sky-900 p-4 w-full rounded-md"
               onClick={() => {
                 onClick?.()
                 item.onClick()

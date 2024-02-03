@@ -1,7 +1,7 @@
 import SectionHeader from 'common/components/sectionHeader'
 import { HomeSectionId } from 'common/types/homeSectionId'
 import LocationIcon from 'common/assets/images/location.png'
-import MailIcon from 'common/assets/images/mail.png'
+import EnvelopeIcon from 'common/assets/icons/envelope.svg?react'
 
 const ContactSection = () => {
   return (
@@ -17,9 +17,9 @@ const ContactSection = () => {
         </div>
 
         <a
-          className="flex gap-2 mt-2 items-center hover:bg-sky-50 px-4 py-2 rounded-md"
+          className="flex gap-2 mt-2 items-center hover:bg-sky-50 dark:hover:bg-sky-900 px-4 py-2 rounded-md"
           href="mailto:matheus.correa70@gmail.com">
-          <img src={MailIcon} alt="Email icon" className="w-6 h-6" />
+          <EnvelopeIcon aria-label="Email icon" className="w-6 h-6 dark:fill-gray-100" />
           <span>matheus.correa70@gmail.com</span>
         </a>
       </div>

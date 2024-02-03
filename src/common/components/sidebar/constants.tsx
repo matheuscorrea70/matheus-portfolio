@@ -6,7 +6,9 @@ import FolderIcon from 'common/assets/icons/folder.svg?react'
 import HomeIcon from 'common/assets/icons/home.svg?react'
 
 const scrollIntoView = (sectionId: HomeSectionId) => {
-  document.getElementById(`section-${sectionId}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  document
+    .getElementById(`section-${sectionId}`)
+    ?.scrollIntoView({ behavior: 'smooth', block: 'start' })
 }
 
 export const NAV_SECTIONS = [
@@ -14,30 +16,30 @@ export const NAV_SECTIONS = [
     id: HomeSectionId.Home,
     label: 'Home',
     onClick: () => scrollIntoView(HomeSectionId.Home),
-    icon: <HomeIcon width={22} />
+    icon: <HomeIcon width={22} className="dark:fill-gray-100" />
   },
   {
     id: HomeSectionId.About,
     label: 'About',
     onClick: () => scrollIntoView(HomeSectionId.About),
-    icon: <UserIcon width={22} />
+    icon: <UserIcon width={22} className="dark:fill-gray-100" />
   },
   {
     id: HomeSectionId.Experience,
     label: 'Experience',
     onClick: () => scrollIntoView(HomeSectionId.Experience),
-    icon: <BriefcaseIcon width={22} />
+    icon: <BriefcaseIcon width={22} className="dark:fill-gray-100" />
   },
   {
     id: HomeSectionId.Projects,
     label: 'Projects',
     onClick: () => scrollIntoView(HomeSectionId.Projects),
-    icon: <FolderIcon width={22} />
+    icon: <FolderIcon width={22} className="dark:fill-gray-100" />
   },
   {
     id: HomeSectionId.Contact,
     label: 'Contact',
     onClick: () => scrollIntoView(HomeSectionId.Contact),
-    icon: <AddressBookIcon width={22} />
+    icon: <AddressBookIcon width={22} className="dark:fill-gray-100" />
   }
 ]

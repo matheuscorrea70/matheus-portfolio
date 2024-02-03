@@ -16,8 +16,8 @@ const ExperienceSection = () => {
                 <h2 className="font-bold text-lg">{item.title}</h2>
               </header>
               <div className='text-sm'>{item.company}</div>
-              <div className='text-gray-500 text-sm'>{item.date}</div>
-              <div className='text-gray-500 text-sm'>{item.location}</div>
+              <div className='text-gray-500 text-sm dark:text-gray-400'>{item.date}</div>
+              <div className='text-gray-500 text-sm dark:text-gray-400'>{item.location}</div>
               <Html as="p" className='mt-4'>{item.description}</Html>
               <div className='mt-4 '>
                 <strong>Tech stack: {item.techStack}</strong>
