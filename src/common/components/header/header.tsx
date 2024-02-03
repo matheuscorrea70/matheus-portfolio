@@ -34,7 +34,7 @@ const Header = () => {
           {theme === 'dark' ? (
             <SunIcon className="w-5 lg:w-6 dark:fill-gray-100" />
           ) : (
-            <MoonIcon className="w-4 lg:w-6 dark:fill-gray-100" />
+            <MoonIcon className="w-4 lg:w-5 dark:fill-gray-100" />
           )}
         </button>
         <button
