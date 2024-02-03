@@ -31,7 +31,7 @@ const ProjectsSection = () => {
                   </a>
                 )}
                 {item.liveDemo && (
-                  <a className="flex gap-2" href={item.liveDemo} target="_blank">
+                  <a className="flex gap-2 hover:bg-sky-50 dark:hover:bg-sky-900 py-2 rounded-md" href={item.liveDemo} target="_blank">
                     <span>Live Demo</span>
                     <ExternalIcon width={20} className="dark:fill-gray-100" />
                   </a>
