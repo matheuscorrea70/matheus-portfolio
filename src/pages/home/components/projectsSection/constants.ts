@@ -1,8 +1,17 @@
 import PortfolioPicture from './assets/images/portfolioPicture.png'
 import MoviesAppPicture from './assets/images/moviesAppPicture.png'
+import NodeApiPicture from './assets/images/nodeApiPicture.png'
 import { ProjectList } from './types'
 
 export const PROJECT_LIST: ProjectList = [
+  {
+    picture: NodeApiPicture,
+    title: 'Authentication API',
+    description:
+      'This API provides secure user authentication services using JWTokens and encrypted passwords. It is built on top of Node.js and Express.js, offering a robust and scalable solution for managing user authentication in web applications.',
+      stack: 'TypeScript, Node, Express, MySQL, TypeORM, BCrypt, JWT',
+    github: 'https://github.com/matheuscorrea70/api-auth'
+  },
   {
     picture: MoviesAppPicture,
     title: 'Top Rated Movies App',
