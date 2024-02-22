@@ -15,7 +15,7 @@ const Sidebar = forwardRef(({ isOpen, onClick }: SidebarProps, ref: Ref<HTMLDivE
       ref={ref}>
       <ul>
         {NAV_SECTIONS.map(item => (
-          <li className="py-2">
+          <li className="py-2" key={item.id}>
             <button
               aria-label={item.label}
               className="flex gap-4 hover:bg-sky-50 dark:hover:bg-sky-900 p-4 w-full rounded-md"
@@ -32,5 +32,7 @@ const Sidebar = forwardRef(({ isOpen, onClick }: SidebarProps, ref: Ref<HTMLDivE
     </div>
   )
 })
+
+Sidebar.displayName = 'Sidebar'
 
 export default Sidebar

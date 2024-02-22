@@ -52,7 +52,7 @@ export const EXPERIENCE_LIST: ExperienceList = [
     company: 'Triadbrasil · Internship',
     date: 'Feb 2014 - May 2015',
     location: 'Belo Horizonte, Minas Gerais, Brazil · On-site',
-    description: `- Contributed to implementing web applications for different clients.`,
+    description: '- Contributed to implementing web applications for different clients.',
     techStack: 'JavaScript, PHP, MySQL, Yii framework'
   }
 ]

@@ -14,6 +14,7 @@ const ProjectsSection = () => {
       <ul>
         {PROJECT_LIST.map((item, index) => (
           <li
+            key={item.title}
             className={`flex flex-col items-start gap-12 mt-8 pb-8 justify-between ${index % 2 === 0 && 'lg:flex-row-reverse'} lg:flex-row`}>
             <img src={item.picture} className="w-[30rem] h-auto rounded-lg" />
 
@@ -26,12 +27,17 @@ const ProjectsSection = () => {
                   <a
                     className="flex gap-2 hover:bg-sky-50 dark:hover:bg-sky-900 py-2 rounded-md"
                     href={item.github}
-                    target="_blank">
+                    target="_blank"
+                    rel="noopener noreferrer">
                     <span>Code</span> <GitHubIcon width={22} className="dark:fill-gray-100" />
                   </a>
                 )}
                 {item.liveDemo && (
-                  <a className="flex gap-2 hover:bg-sky-50 dark:hover:bg-sky-900 py-2 rounded-md" href={item.liveDemo} target="_blank">
+                  <a
+                    className="flex gap-2 hover:bg-sky-50 dark:hover:bg-sky-900 py-2 rounded-md"
+                    href={item.liveDemo}
+                    target="_blank"
+                    rel="noopener noreferrer">
                     <span>Live Demo</span>
                     <ExternalIcon width={20} className="dark:fill-gray-100" />
                   </a>
