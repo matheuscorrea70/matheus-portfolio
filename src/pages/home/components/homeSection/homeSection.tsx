@@ -18,7 +18,7 @@ const HomeSection = () => {
           <h1 className="font-bold text-xl">Senior Software Engineer</h1>
           <p className="pt-6">
             {`Hi, I'm Matheus Correa. A seasoned Senior Software Engineer based in Minas Gerais,
-            Brazil with over 9 years of experience as a front-end developer.`}
+            Brazil with over 10 years of experience as a front-end developer.`}
           </p>
           <div className="mt-2 flex gap-3 items-center">
             <a
